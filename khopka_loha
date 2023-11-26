@@ -1,0 +1,21 @@
+//Кнопка (просто так)
+int k = 12;
+int l = 2;
+int b = 5;
+void setup() {
+  pinMode(k, INPUT);
+pinMode(l, OUTPUT);
+pinMode(b, OUTPUT);
+}
+
+void loop() {
+  if(digitalRead(k)==HIGH){
+    digitalWrite(l, HIGH);
+    digitalWrite(b, LOW);
+  }
+  else{
+    digitalWrite(l, LOW);
+    digitalWrite(b, HIGH);
+  }
+  
+}
